@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lab4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int N;
+            int K;
+            Random rand = new Random();
+            Console.WriteLine("Введіть розмір");
+            N = int.Parse(Console.ReadLine());
+            int[] tmp = new int[N];
+            int[] f = new int[N];
+            int[] b = new int[N];
+            Console.WriteLine("Введіть число не більше за розмір масиву");
+            K = int.Parse(Console.ReadLine());
+            Console.WriteLine("масив до перенесу елементів");
+            for (int i = 0; i < N; i++)
+            {
+                b[i] = rand.Next(10);
+                Console.Write(b[i] + " ");
+            }
+            for(int i = 0; i < K; i++)
+            {
+                tmp[N-K+i] = b[i];
+            }
+            for (int i = 0; i < N-K; i++)
+            {
+                f[i] = b[i+K];
+            }
+            for (int i = 0; i < K; i++)
+            {
+                f[N-K+i] = tmp[N-K+i];
+            }
+            Console.WriteLine("  Після перенесу");
+            for (int i = 0; i < N; i++)
+            {
+            Console.Write(f[i] + " ");
+            }
+        }
+    }
+}
