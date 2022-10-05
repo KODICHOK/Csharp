@@ -18,14 +18,14 @@ namespace lab2
             nn = int.Parse(Console.ReadLine());
             Console.WriteLine("Введіть число nk ");
             nk = int.Parse(Console.ReadLine());
-            for (k = nn;  k<nk; k++)
-            {
-                if (nn > nk || nn < 0)
+            if (nn > nk || nn < 0)
                 {
-                    Console.WriteLine("мишаня давай по новой!!!");
+                    Console.WriteLine("неправильні значення!!!");
                     return;
                 }
-                else if (0 <= nn && nn <= nk)
+            for (k = nn;  k<nk; k++)
+            {
+                if (0 <= nn && nn <= nk)
                 {
                     sum += (Math.Pow(-1, Math.Pow(k, 2) + k + 1) + (Math.Pow(k, 2)))/(2*Math.Pow(k, 2)+5);
                 }
