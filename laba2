@@ -18,7 +18,7 @@ namespace lab2
             nn = int.Parse(Console.ReadLine());
             Console.WriteLine("Введіть число nk ");
             nk = int.Parse(Console.ReadLine());
-            if (nn > nk || nn < 0)
+            if (nn >= nk || nn <= 0)
                 {
                     Console.WriteLine("неправильні значення!!!");
                     return;
