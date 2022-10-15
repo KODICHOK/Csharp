@@ -12,37 +12,39 @@ namespace lab4
         static void Main(string[] args)
         {
             int N;
-            int K;
-            Random rand = new Random();
+            int K = 0;
+            int c = 0;
+            double A = 0;
+            double d = 0;
+            int sum = 0;
+            int sad = 0;
             Console.WriteLine("Введіть розмір");
             N = int.Parse(Console.ReadLine());
-            int[] tmp = new int[N];
-            int[] f = new int[N];
             int[] b = new int[N];
-            Console.WriteLine("Введіть число не більше за розмір масиву");
-            K = int.Parse(Console.ReadLine());
-            Console.WriteLine("масив до перенесу елементів");
             for (int i = 0; i < N; i++)
             {
-                b[i] = rand.Next(10);
-                Console.Write(b[i] + " ");
+                b[i] = int.Parse(Console.ReadLine());
             }
-            for(int i = 0; i < K; i++)
-            {
-                tmp[N-K+i] = b[i];
+            K = b[1] - b[0];
+            A = b[1] / b[0];
+            for (int i = 2; i < N; i++) {
+                c = b[i] - b[i - 1];
+                d = b[i] / b[i - 1];
+                if (c == K) {
+                    sum++;
+                }
+                else if (d == A) {
+                    sad++;
+                }
             }
-            for (int i = 0; i < N-K; i++)
-            {
-                f[i] = b[i+K];
+            if (sum == N - 2) {
+                Console.Write("арифметична прогресія з різницею у " + K + " елементів");
             }
-            for (int i = 0; i < K; i++)
-            {
-                f[N-K+i] = tmp[N-K+i];
+            else if (sad == N - 2) {
+                Console.Write("геометрична прогресія з множником у " + A + " елементів");
             }
-            Console.WriteLine("  Після перенесу");
-            for (int i = 0; i < N; i++)
-            {
-            Console.Write(f[i] + " ");
+            else {
+                Console.WriteLine("0");
             }
         }
     }
