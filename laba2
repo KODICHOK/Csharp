@@ -27,7 +27,7 @@ namespace lab2
             {
                 if (0 <= nn && nn <= nk)
                 {
-                    sum += (Math.Pow(-1, Math.Pow(k, 2) + k + 1) + (Math.Pow(k, 2)))/(2*Math.Pow(k, 2)+5);
+                    sum += (Math.Pow(-1, Math.Pow(k, 2)- 2 * k + 3) * k + 1)/(Math.Pow(k, 2) - 2);
                 }
             }
             Console.WriteLine(" результат " + sum);
