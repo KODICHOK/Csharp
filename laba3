@@ -17,7 +17,7 @@ namespace lab3
             int z = (x / 100) % 10;
             int f = x / 1000;
             int g = x % 10;
-            if (f + z == g + y)
+            if (f == g && z == y)
             {
               Console.WriteLine("не ну все підходить");
             }
