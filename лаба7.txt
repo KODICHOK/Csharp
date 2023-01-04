@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace lb7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //10.Створити ліст інтових значень 0-9, дозволити введення з клавіатури.
+            //Порахувати кількість входження кожного числа в ліст.
+            //Створити масив, в якому індекс буде відповідати числу, а кількість входження цього числа – 
+            //змінній на цьому індексі.
+
+
+            List<int> nb = new List<int>();
+
+            Console.WriteLine("Розмір листу ");
+            int c = int.Parse(Console.ReadLine());
+
+            for (int i = 0; i < c; i++)
+            {
+                Console.WriteLine("Ввеліть {0} елемент", i);
+                nb.Add(int.Parse(Console.ReadLine()));
+            }
+
+            int[] arr = new int[nb.Count];
+            int numb;
+
+            Console.WriteLine("скільки чисел ви будете вводити? ");
+            int d = int.Parse(Console.ReadLine());
+
+
+            for (int i = 0; i < d; i++)
+            {
+                int p = 0;
+                Console.WriteLine("Введіть {0} число ", i);
+                numb = int.Parse(Console.ReadLine());
+                for (int j = 0; j < nb.Count; j++)
+                {
+                    if (numb == nb[j])
+                    {
+                        p++;
+                        arr[j] += p;
+                    }
+                }
+            }
+
+
+
+            Console.WriteLine();
+            Console.WriteLine("масив: ");
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(+ arr[i] + " ");
+            }
+
+            Console.Read();
+        }
+    }
+}
