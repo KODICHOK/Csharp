@@ -1,0 +1,53 @@
+namespace Lb8
+{
+    public static class Program
+    {
+        private static void Main()
+        {
+            var garage = new Garage();
+            garage.Init();
+            garage.ShowAutoPark();
+
+
+            Console.WriteLine("Вітаю мій Шейхе, ви бажаєте купити чи позбутись якогось автомобіли?");
+            Console.WriteLine(" покупка - 1 \n позбутись - 2 \n");
+            int solution = int.Parse(Console.ReadLine() ?? string.Empty);
+            switch (solution)
+            {
+                case 1:
+                    BuyCar(garage);
+                    break;
+                case 2:
+                    CostOutCar(garage);
+                    break;
+            }
+        }
+
+        private static void CostOutCar(Garage garage)
+        {
+            Console.WriteLine("Бувай ще один автомобіль, виберіть індекс автомобіля якого бажаєте позбутись.");
+            int carIndex = int.Parse(Console.ReadLine() ?? string.Empty);
+            garage.RemoveCar(garage.Cars[carIndex]);
+            garage.ShowAutoPark();
+        }
+
+        private static void BuyCar(Garage garage)
+        {
+            Console.WriteLine("Марка машини");
+            string? carBrand = Console.ReadLine();
+
+            Console.WriteLine("Колір");
+            string? carColor = Console.ReadLine();
+
+            Console.WriteLine("Швидкість");
+            string? carSpeed = Console.ReadLine();
+
+            Console.WriteLine("Рік випуску");
+            string? carYearManufacture = Console.ReadLine();
+
+            var newCar = new Car(carBrand, carColor, carSpeed, carYearManufacture);
+            garage.AddCar(newCar);
+            garage.ShowAutoPark();
+        }
+    }
+}

@@ -1,0 +1,39 @@
+namespace Lb8;
+
+public class Garage
+{
+    public List<Car> Cars { get; } = new();
+
+    public void Init()
+    {
+        AddCar(new Car("Pagany", "black", "400 ", "2018"));
+        AddCar(new Car("Ferrari", "red", "400 ", "2020"));
+    }
+
+    public void AddCar(Car car)
+    {
+        Cars.Add(car);
+    }
+
+    public void RemoveCar(Car car)
+    {
+        Cars.Remove(car);
+    }
+
+    public void ShowAutoPark()
+    {
+        Console.WriteLine("Ваш автопарк:");
+        for (int i = 0; i < Cars.Count; i++)
+        {
+            Console.WriteLine($"індекс машини - {i}");
+            Cars[i].GetCarData();
+        }
+    }
+
+    private List<Car> SearchCarByParameters(string parameters, IEnumerable<Car> cars)
+    {
+        return cars.Where(car =>
+            parameters == car.BrandCar || parameters == car.ColorCar || parameters == car.SpeedCar ||
+            parameters == car.YearManufactureCar).ToList();
+    }
+}
