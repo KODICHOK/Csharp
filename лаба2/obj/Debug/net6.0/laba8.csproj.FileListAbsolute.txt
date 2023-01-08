@@ -1,0 +1,15 @@
+D:\laba6\laba6\bin\Debug\net6.0\laba8.exe
+D:\laba6\laba6\bin\Debug\net6.0\laba8.deps.json
+D:\laba6\laba6\bin\Debug\net6.0\laba8.runtimeconfig.json
+D:\laba6\laba6\bin\Debug\net6.0\laba8.dll
+D:\laba6\laba6\bin\Debug\net6.0\laba8.pdb
+D:\laba6\laba6\obj\Debug\net6.0\laba8.csproj.AssemblyReference.cache
+D:\laba6\laba6\obj\Debug\net6.0\laba8.GeneratedMSBuildEditorConfig.editorconfig
+D:\laba6\laba6\obj\Debug\net6.0\laba8.AssemblyInfoInputs.cache
+D:\laba6\laba6\obj\Debug\net6.0\laba8.AssemblyInfo.cs
+D:\laba6\laba6\obj\Debug\net6.0\laba8.csproj.CoreCompileInputs.cache
+D:\laba6\laba6\obj\Debug\net6.0\laba8.dll
+D:\laba6\laba6\obj\Debug\net6.0\refint\laba8.dll
+D:\laba6\laba6\obj\Debug\net6.0\laba8.pdb
+D:\laba6\laba6\obj\Debug\net6.0\laba8.genruntimeconfig.cache
+D:\laba6\laba6\obj\Debug\net6.0\ref\laba8.dll
