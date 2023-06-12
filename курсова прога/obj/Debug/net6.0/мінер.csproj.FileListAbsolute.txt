@@ -1,0 +1,15 @@
+D:\laba6\курсова прога\bin\Debug\net6.0\мінер.exe
+D:\laba6\курсова прога\bin\Debug\net6.0\мінер.deps.json
+D:\laba6\курсова прога\bin\Debug\net6.0\мінер.runtimeconfig.json
+D:\laba6\курсова прога\bin\Debug\net6.0\мінер.dll
+D:\laba6\курсова прога\bin\Debug\net6.0\мінер.pdb
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.csproj.AssemblyReference.cache
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.GeneratedMSBuildEditorConfig.editorconfig
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.AssemblyInfoInputs.cache
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.AssemblyInfo.cs
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.csproj.CoreCompileInputs.cache
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.dll
+D:\laba6\курсова прога\obj\Debug\net6.0\refint\мінер.dll
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.pdb
+D:\laba6\курсова прога\obj\Debug\net6.0\мінер.genruntimeconfig.cache
+D:\laba6\курсова прога\obj\Debug\net6.0\ref\мінер.dll
